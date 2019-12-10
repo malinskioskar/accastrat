@@ -1,0 +1,116 @@
+{
+    "parser": "babel-eslint",
+    "env": {
+        "browser": true,
+        "node": true,
+        "es6": true,
+        "jest/globals": true
+    },
+    "extends": [
+        "airbnb",
+        "plugin:react/recommended"
+    ],
+    "globals": {
+        "src": true,
+        "Atomics": "readonly",
+        "SharedArrayBuffer": "readonly",
+        "describe": false
+    },
+    "parserOptions": {
+        "ecmaFeatures": {
+            "jsx": true
+        },
+        "ecmaVersion": 2018,
+        "sourceType": "module"
+    },
+    "plugins": [
+        "react",
+        "jest",
+        "jsx-a11y",
+        "import"
+    ],
+    "rules": {
+        "quotes": [
+            "error",
+            "single"
+        ],
+        "semi": [
+            "error",
+            "always"
+        ],
+        "no-console": 0,
+        "indent": 0,
+        "no-underscore-dangle": 0,
+        "prefer-template": 0,
+        "no-plusplus": 0,
+        "react/prefer-stateless-function": 0,
+        "react/sort-comp": 0,
+        "react/jsx-indent": 0,
+        "max-len": [
+            "error",
+            {
+                "code": 120,
+                "ignoreStrings": true,
+                "ignoreTemplateLiterals": true,
+                "ignoreComments": true
+            }
+        ],
+        "no-prototype-builtins": 0,
+        "no-param-reassign": 0,
+        "no-eval": 0,
+        "id-length": [
+            "error",
+            {
+                "min": 2,
+                "exceptions": [
+                    "x",
+                    "y",
+                    "i",
+                    "j",
+                    "a",
+                    "b"
+                ]
+            }
+        ],
+        "new-cap": [
+            "error",
+            {
+                "capIsNewExceptions": [
+                    "Map",
+                    "List"
+                ]
+            }
+        ],
+        "class-methods-use-this": 0,
+        "camelcase": 0,
+        "max-statements": [
+            1,
+            20
+        ],
+        "no-use-before-define": [
+            "error",
+            {
+                "functions": false
+            }
+        ],
+        "react/jsx-filename-extension": [
+            1,
+            {
+                "extensions": [
+                    ".js",
+                    ".jsx"
+                ]
+            }
+        ],
+    },
+    "settings": {
+        "import/resolver": {
+            "node": {
+                "extensions": [
+                    ".js",
+                    ".jsx"
+                ]
+            }
+        }
+    }
+}

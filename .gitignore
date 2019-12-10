@@ -1,0 +1,19 @@
+# documentation
+/doc/
+/reports/
+
+# dependencies
+/node_modules/
+
+# testing
+/coverage/
+/cypress/screenshots/
+/cypress/results/
+cypress-results*.json
+test-report.html
+test-results.json
+
+# production
+/build/
+/dist/
+yarn-error.log
